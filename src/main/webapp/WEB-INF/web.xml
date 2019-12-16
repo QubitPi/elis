@@ -1,0 +1,23 @@
+<web-app version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <servlet>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>com.yahoo.elide.resources</param-value>
+        </init-param>
+        <init-param>
+            <!-- Yes, don't trust IDE - it's NOT "javax.ws.rs.ApplicationPath"! (commemorate 2 days of debugging :( )-->
+            <param-name>javax.ws.rs.Application</param-name>
+            <param-value>com.github.QubitPi.elis.config.ElisResourceConfig</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+        <async-supported>true</async-supported>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <url-pattern>/v1/*</url-pattern>
+    </servlet-mapping>
+</web-app>
