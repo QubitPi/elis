@@ -1,3 +1,5 @@
+[ ![License Badge](https://img.shields.io/badge/License-Apache%202.0-orange.svg?longCache=true&style=for-the-badge) ](https://www.apache.org/licenses/LICENSE-2.0)
+
 Elis
 ====
 
