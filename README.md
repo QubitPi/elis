@@ -139,3 +139,7 @@ following:
 Now you can see this user in `User` table under `elide` database, or you can get it via GET like this
 
     curl http://localhost:8080/v1/user
+
+## License
+The use and distribution terms for this software are covered by the Apache License, Version 2.0
+(http://www.apache.org/licenses/LICENSE-2.0.html).
